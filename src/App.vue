@@ -5,8 +5,12 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
+   
   </div>
 </template>
+
+
+
 
 <style>
 #app {
@@ -28,5 +32,11 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1em;
 }
 </style>
