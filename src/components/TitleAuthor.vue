@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <h1 class="title">
-      {{ author.toUpperCase() }} TIENE
-      {{ countBooks != 0 ? countBooks : "" }} LIBROS
+  <div class="bg ">
+    <h1 class="title text-center">
+      {{ author.toUpperCase() }} Has
+      {{ countBooks != 0 ? countBooks : "" }} Books
     </h1>
   </div>
 </template>
@@ -20,3 +20,6 @@ export default {
   },
 };
 </script>
+<style scoped>
+
+</style>

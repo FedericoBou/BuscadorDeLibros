@@ -19,3 +19,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+  .container{
+    min-height: calc(59.5vh - 5vh - 5vh);
+  }
+</style>

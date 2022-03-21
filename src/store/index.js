@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import validator from "validator";
 
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
+  
   state: {
     author:"",
     books: [],
@@ -12,6 +14,8 @@ export default new Vuex.Store({
   mutations: {
     LOAD_AUTHOR: (state, payload) => (state.author = payload),
     LOAD_BOOKS: (state, payload) => (state.books = payload),
+    
+
   },
   getters: {
     countBooks: (state) => state.books.length,
@@ -23,11 +27,14 @@ export default new Vuex.Store({
       )
         .then((res) => {
           return res.json();
+          
         })
+       
         .then((response) => {
           const books = response.items.map((book) => book.volumeInfo)
           state.commit("LOAD_BOOKS",books)
         });
+        
     },
   },
 });
