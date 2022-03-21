@@ -7,6 +7,8 @@
       <author-form></author-form>
 
       <book-list></book-list>
+
+  
      
     </div>
   </div>
@@ -19,13 +21,13 @@ import TitleAuthor from "@/components/TitleAuthor";
 
 
 
+
 export default {
   name: "App",
   components: {
     BookList,
     AuthorForm,
     TitleAuthor,
-    
   },
  
 };
